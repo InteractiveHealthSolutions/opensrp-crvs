@@ -6,8 +6,8 @@
 	<artifactId>opensrp</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Basic Module</name>
-	<description>Example OpenMRS Module that may be used as a basis for creating a new module.</description>
+	<name>OpenSRP</name>
+	<description>OpenMRS Module for OpenSRP.</description>
 
 	<url>https://wiki.openmrs.org/x/FQ4z</url>
 
