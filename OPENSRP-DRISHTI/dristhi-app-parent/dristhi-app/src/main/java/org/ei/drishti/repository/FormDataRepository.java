@@ -107,6 +107,12 @@ public class FormDataRepository extends DrishtiRepository {
         return readFormSubmission(cursor);
     }
 
+    public List<FormSubmission> getAllFormSubmissions() {
+        SQLiteDatabase database = masterRepository.getReadableDatabase();
+        Cursor cursor = database.query(FORM_SUBMISSION_TABLE_NAME, FORM_SUBMISSION_TABLE_COLUMNS, null, null, null, null, null);
+        return readFormSubmission(cursor);
+    }
+    
     public long getPendingFormSubmissionsCount() {
         return longForQuery(masterRepository.getReadableDatabase(), "SELECT COUNT(1) FROM " + FORM_SUBMISSION_TABLE_NAME
                 + " WHERE " + SYNC_STATUS_COLUMN + " = ? ",

@@ -9,8 +9,8 @@
 
 	<artifactId>opensrp-omod</artifactId>
 	<packaging>jar</packaging>
-	<name>Basic Module OMOD</name>
-	<description>OpenMRS module project for Basic Module</description>
+	<name>OpenSRP module</name>
+	<description>OpenMRS module for OpenSRP</description>
 
 	<dependencies>
 		<dependency>
